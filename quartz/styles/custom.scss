@@ -20,3 +20,9 @@
     background: var(--lightgray); /* 使用 Quartz 默认的浅灰色 */
     border-radius: 4px;
 }
+
+.right.sidebar .backlinks {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
