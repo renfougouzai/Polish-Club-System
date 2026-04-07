@@ -44,6 +44,11 @@ export const defaultContentPageLayout: PageLayout = {
     Component.Graph(),
     Component.DesktopOnly(Component.TableOfContents()),
     Component.Backlinks(),
+    Component.RecentNotes({
+      title: "最近修改的叫品",
+      limit: 5,               // 显示最近修改的 5 个页面
+      filter: (f) => f.slug !== "index", // 排除首页自身的变动
+    }),
   ],
 }
 
