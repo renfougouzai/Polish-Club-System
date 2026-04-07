@@ -43,7 +43,14 @@ export const defaultContentPageLayout: PageLayout = {
     Component.Explorer({ title: "目录" }),
   ],
   right: [
-    Component.Graph(),
+    Component.Graph({
+      localGraph: {
+        showTags: false, // 关闭局部图谱的标签显示
+      },
+      globalGraph: {
+        showTags: false, // 关闭全局图谱的标签显示
+      },
+    }),
     Component.RecentNotes({
       title: "最近修改的叫品",
       limit: 5,               // 显示最近修改的 5 个页面
