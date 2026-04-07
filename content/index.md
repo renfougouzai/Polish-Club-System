@@ -1,8 +1,5 @@
 ---
 title: Welcome
-tags:
-  - 桥牌
-  - 波兰梅花
 ---
 # 开叫
 
