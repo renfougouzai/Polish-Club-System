@@ -1,3 +1,22 @@
 @use "./base.scss";
 
 // put your custom CSS here!
+/* CSS/SCSS - 修复右侧边栏无法滚动的问题 */
+
+.right.sidebar {
+    /* 限制最大高度为屏幕高度（留出一点顶部空白） */
+    max-height: calc(100vh - 4rem); 
+    /* 当内容超出高度时，自动显示上下滚动条 */
+    overflow-y: auto;               
+    /* 底部预留一点空间，防止内容贴紧屏幕边缘 */
+    padding-bottom: 2rem;           
+}
+
+/* (可选) 美化右侧滚动条：让它变得极细，避免破坏原有美感 */
+.right.sidebar::-webkit-scrollbar {
+    width: 4px;
+}
+.right.sidebar::-webkit-scrollbar-thumb {
+    background: var(--lightgray); /* 使用 Quartz 默认的浅灰色 */
+    border-radius: 4px;
+}
